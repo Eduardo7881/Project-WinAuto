@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package headunit.protobuf;
+
+message StartSession {
+    required int32 width = 1;
+    required int32 height = 2;
+    required int32 dpi = 3;
+}
+
+message SessionResponse {
+    required bool success = 1;
+    optional string error_message = 2;
+}
