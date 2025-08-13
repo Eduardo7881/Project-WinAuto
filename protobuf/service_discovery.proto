@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package headunit.protobuf;
+
+message ServiceDiscovery {
+    message Channel {
+        required int32 id = 1;
+        required string name = 2;
+    }
+
+    repeated Channel channels = 1;
+    optional string manufacter = 2;
+    optional string model = 3;
+}
